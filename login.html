@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <title>Batinga Cursos • Login</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/app.css"/>
+</head>
+<body class="auth-body">
+  <main class="auth-shell">
+    <section class="auth-brand-panel" aria-label="Batinga Cursos">
+      <div class="auth-logo-box">
+        <img src="./assets/img/logo.png" alt="Batinga Cursos"/>
+      </div>
+      <div class="auth-brand-content">
+        <span class="auth-kicker">Deepontus</span>
+        <h1>Ponto, horas e equipe no ritmo do Batinga.</h1>
+        <p></p>
+      </div>
+      <div class="auth-mini-grid" aria-hidden="true">
+        <div><b>Ponto</b><span>Entrada e saída</span></div>
+        <div><b>HE</b><span>Hora extra</span></div>
+      </div>
+    </section>
+
+    <section class="auth-card card paper" aria-label="Login">
+      <div class="auth-card-head">
+        <div class="auth-mark"><img src="./assets/img/favicon.png" alt=""/></div>
+        <div>
+          <h2>Acesso</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <form id="login-form" class="auth-form">
+        <div class="field">
+          <label for="employee_id">ID do colaborador</label>
+          <input id="employee_id" autocomplete="username" placeholder="Ex.: EMP005" required/>
+        </div>
+        <div class="field">
+          <label for="password">Senha</label>
+          <input id="password" type="password" autocomplete="current-password" placeholder="••••••••" required/>
+        </div>
+
+        <button class="btn primary auth-submit" id="btn-login" type="submit">Entrar</button>
+        <p id="error" class="auth-error" role="alert"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/core.js"></script>
+  <script src="./assets/js/login.js"></script>
+</body>
+</html>
