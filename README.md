@@ -1,3 +1,5 @@
+> **Repositório canônico do Deepontus.** Consulte [consolidação e migração](docs/REPOSITORY-STATUS.md).
+
 # Deepontus / Ponto Batinga
 
 Sistema web para controle de ponto, jornada, horas extras, pendências, calendário, financeiro e gestão de colaboradores do Batinga Cursos.
